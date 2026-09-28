@@ -1,0 +1,20 @@
+prefix             = "sampleaks"
+environment        = "dev"
+location           = "eastus"
+node_count         = 1
+vm_size            = "Standard_B2s"
+kubernetes_version = null
+
+# Configuração do Spot Node Pool
+enable_spot_node_pool = true
+spot_vm_size          = "Standard_B2s"
+spot_min_count        = 0
+spot_max_count        = 3
+
+tags = {
+  Environment = "dev"
+  ManagedBy   = "Terraform"
+  Project     = "sample-aks-iac-deploy"
+}
+
+
